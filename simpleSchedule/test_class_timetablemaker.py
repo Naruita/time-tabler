@@ -17,13 +17,12 @@ class day_timetable:
             else:
                 self.links.append(temp_link)
         self.time_table[self.in_time] = {self.course_code: self.links}
-        print(str(self.time_table))
+        print(str(self.time_table)) # just prints to console for debugging. Can remove later.
     
     def day_return(self):
         return self.day
 
     def put_info(self):
-        print(str(self.time_table))
         return self.time_table
 
 # available_days = r'^[sun,mon,tues,wednes,thurs,fri]day$' need to verify days later
@@ -36,7 +35,6 @@ while True:
         if input('Enter the upcoming class?(y/n)') == 'y':
             current_day.get_info()
             week_timetable[current_day.day_return()] = current_day.put_info()
-            print(week_timetable)
         else:
             break
     if input("Do you wish to continue?(y/n) : ") == 'n':
