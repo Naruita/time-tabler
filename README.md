@@ -9,5 +9,9 @@ Essentially, the features that Time Tabler can be used for are,
 - A notification service 15 minutes prior to your class beginning.
 - Starting up all the websites (applications might come later) a few minutes prior to the class starting.
 
+## License
+Time Tabler is licensed under MIT.
+Read the LICENSE file for more information.
+
 ---
 ###### Pretty much it.
