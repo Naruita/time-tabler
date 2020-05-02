@@ -4,6 +4,7 @@ from time import sleep
 import time
 import os
 import json
+import deploy
 
 # function to provide the current day the user is in.
 def find_day():
@@ -25,10 +26,12 @@ def main():
         with open('schedule.txt', 'r') as f:
             tempApps = f.read()
             converted = json.loads(tempApps)
-            print("File info : ", converted)
             days = converted.keys()
             schedule.append(converted.values())
 
     timestamp = '0900' # just need to get the timestamps now.
 
-    return parse_file_link(converted[find_day()][timestamp])
+    temp_links = parse_file_link(converted[find_day()][timestamp])
+    deploy.deploy_links(temp_links)
+
+main()
