@@ -1,0 +1,10 @@
+{
+    "saturday": {
+        "0900": {
+            "STS1007": [
+                "https://www.youtube.com",
+                "https://www.github.com"
+            ]
+        }
+    }
+}

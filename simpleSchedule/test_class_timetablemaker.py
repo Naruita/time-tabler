@@ -32,12 +32,12 @@ while True:
     input_day_name = input("Enter the day : ").lower()
     current_day = day_timetable(input_day_name)
     while True:
-        if input('Enter the upcoming class?(y/n) : ') == 'y':
+        if input('Enter the upcoming class?(y/n) : ')[0] == 'y':
             current_day.get_info()
             week_timetable[current_day.day_return()] = current_day.put_info()
         else:
             break
-    if input("Do you wish to continue?(y/n) : ") == 'n':
+    if input("Do you wish to continue?(y/n) : ")[0] == 'n':
         break
 
 with open('schedule.txt', 'w') as f:
