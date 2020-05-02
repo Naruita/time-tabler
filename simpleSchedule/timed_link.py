@@ -3,17 +3,31 @@ import webbrowser as webb
 from time import sleep
 from pynput.keyboard import Key, Controller
 import time
+import os
+import json
+
+week_days = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']
+day = week_days[datetime.date.today().weekday()]
+
+schedule = []
+if os.path.isfile('schedule.txt'):
+    with open('schedule.txt', 'r') as f:
+        tempApps = f.read()
+        converted = json.loads(tempApps)
+        print("File info : ", converted)
+        days = converted.keys()
+        schedule.append(converted.values())
 
 keyboard = Controller()
-op = webb.get('opera')
 
 def link_open():
-    op.open("https://m.teamlink.co/7706072174?p=83b0953304ad70075faa84c94f63a6fd")
-    time.delay(20)
+    webb.open("https://m.teamlink.co/7706072174?p=83b0953304ad70075faa84c94f63a6fd")
+    time.sleep(20)
     keyboard.press(Key.left)
     keyboard.release(Key.left)
     keyboard.press(Key.enter)
     keyboard.release(Key.enter)
+
 now = datetime.datetime.now()
 print(now)
 run_at = now + datetime.timedelta(seconds=5)

@@ -1,1 +1,30 @@
-{'tuesday': {'0900': {'MAT1002': ['https://www.google.com', 'https://www.youtube.com']}, '1000': {'CHY1004': ['https://www.youtube.com', 'https://www.github.com']}}, 'wednesday': {'1000': {'MAT1002': ['https://www.google.com', 'https://www.youtube.com']}}}
+{
+    "tuesday": {
+        "0900": {
+            "MAT1002": [
+                "https://mail.google.com",
+                "https://www.youtube.com"
+            ]
+        },
+        "1000": {
+            "CHY1004": [
+                "https://www.youtube.com",
+                "https://www.google.com"
+            ]
+        }
+    },
+    "wednesday": {
+        "0900": {
+            "STS1007": [
+                "https://www.google.com",
+                "https://www.github.com"
+            ]
+        },
+        "1000": {
+            "MAT1002": [
+                "https://mail.google.com",
+                "https://www.youtube.com"
+            ]
+        }
+    }
+}

@@ -1,4 +1,4 @@
-import pickle
+import json
 
 class day_timetable:
     def __init__(self, day):
@@ -7,7 +7,7 @@ class day_timetable:
 
     def get_info(self):
         self.in_time = input("Enter time in HHMM format : ")
-        self.course_code = input("Enter the course code : ")
+        self.course_code = input("Enter the course code : ").upper()
         self.links = []
         print("Add links now. Type 'quit' to stop.")
         while True:
@@ -32,7 +32,7 @@ while True:
     input_day_name = input("Enter the day : ").lower()
     current_day = day_timetable(input_day_name)
     while True:
-        if input('Enter the upcoming class?(y/n)') == 'y':
+        if input('Enter the upcoming class?(y/n) : ') == 'y':
             current_day.get_info()
             week_timetable[current_day.day_return()] = current_day.put_info()
         else:
@@ -41,4 +41,4 @@ while True:
         break
 
 with open('schedule.txt', 'w') as f:
-    f.write(str(week_timetable))
+    f.write(json.dumps(week_timetable, indent=4, sort_keys=True))
