@@ -1,0 +1,22 @@
+{
+    "sunday": {
+        "1730": {
+            "STS1007": [
+                "https://www.google.com",
+                "https://www.youtube.com"
+            ]
+        },
+        "1800": {
+            "MAT1002": [
+                "https://mail.google.com",
+                "https://www.youtube.com"
+            ]
+        },
+        "1830": {
+            "CHY1004": [
+                "https://www.youtube.com",
+                "https://www.github.com"
+            ]
+        }
+    }
+}
