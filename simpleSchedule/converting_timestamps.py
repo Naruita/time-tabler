@@ -13,13 +13,17 @@ def convert_time(time_stamps):
         time_stamps_new.append(time)
     return time_stamps_new
 
-today = "sunday"
+def time_stamp_return(day):
+    schedule = []
+    if os.path.isfile('schedule.txt'):
+            with open('schedule.txt', 'r') as f:
+                tempApps = f.read()
+                converted = json.loads(tempApps)
+                return convert_time(parse_timestamps(converted[day].keys()))
 
-schedule = []
-if os.path.isfile('schedule.txt'):
-        with open('schedule.txt', 'r') as f:
-            tempApps = f.read()
-            converted = json.loads(tempApps)
-            time_stamps = converted["sunday"].keys()
-            time_stamps = parse_timestamps(time_stamps)
-            time_stamps = convert_time(time_stamps)
+def main():
+    day = input("Which day do you want to know about? : ")
+    print(time_stamp_return(day))
+
+if __name__ == '__main__':
+    main()
