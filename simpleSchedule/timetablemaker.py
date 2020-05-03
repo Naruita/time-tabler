@@ -6,7 +6,7 @@ class day_timetable:
         self.time_table = {}
 
     def get_info(self):
-        self.in_time = input("Enter time in HHMM format : ")
+        self.in_time = input("Enter time in HH:MM format : ")
         self.course_code = input("Enter the course code : ").upper()
         self.links = []
         print("Add links now. Type 'quit' to stop.")

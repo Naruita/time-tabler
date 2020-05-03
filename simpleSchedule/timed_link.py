@@ -31,10 +31,10 @@ def main():
             days = converted.keys()
             schedule.append(converted.values())
 
-    unformatted_timestamps, timestamps = ct.time_stamp_return(find_day()) # unformatted_timestamps -> 1900, timestamps -> 19:00
-    for timestamp in unformatted_timestamps:
+    timestamps = ct.time_stamp_return(find_day()) # unformatted_timestamps -> 1900, timestamps -> 19:00
+    for timestamp in timestamps:
         print(timestamp)
         temp_links = parse_file_link(converted[find_day()][timestamp])
-        smc.scheduling(temp_links)
+        smc.scheduling(timestamp, temp_links)
 
 main()

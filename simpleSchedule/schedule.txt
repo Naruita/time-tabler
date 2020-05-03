@@ -1,15 +1,15 @@
 {
     "sunday": {
-        "2255": {
-            "STS1007": [
-                "https://www.google.com",
-                "https://www.youtube.com"
+        "23:30": {
+            "MGT1002": [
+                "https://www.youtube.com",
+                "https://www.google.com"
             ]
         },
-        "2259": {
-            "CHY1004": [
-                "https://www.youtube.com",
-                "https://www.github.com"
+        "23:31": {
+            "HUM1032": [
+                "https://www.github.com",
+                "https://www.github.com/Naruita"
             ]
         }
     }
