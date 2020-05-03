@@ -19,7 +19,8 @@ def time_stamp_return(day):
             with open('schedule.txt', 'r') as f:
                 tempApps = f.read()
                 converted = json.loads(tempApps)
-                return convert_time(parse_timestamps(converted[day].keys()))
+                parse_timestamps(converted[day].keys())
+                return parse_timestamps(converted[day].keys()), convert_time(parse_timestamps(converted[day].keys()))
 
 def main():
     day = input("Which day do you want to know about? : ")
