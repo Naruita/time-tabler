@@ -1,7 +1,13 @@
 {
-    "saturday": {
-        "0900": {
+    "sunday": {
+        "1942": {
             "STS1007": [
+                "https://www.google.com",
+                "https://www.youtube.com"
+            ]
+        },
+        "1943": {
+            "CHY1004": [
                 "https://www.youtube.com",
                 "https://www.github.com"
             ]

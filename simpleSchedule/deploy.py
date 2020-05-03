@@ -15,5 +15,12 @@ def deploy_links(team_links):
             keyboard.release(Key.left)
             keyboard.press(Key.enter)
             keyboard.release(Key.enter)
+        elif re.match(r"^https://us02web.zoom.us", team_link):
+            webb.open(team_link)
+            time.sleep(20)
+            keyboard.press(Key.left)
+            keyboard.release(Key.left)
+            keyboard.press(Key.enter)
+            keyboard.release(Key.enter)
         else:
             webb.open(team_link)
