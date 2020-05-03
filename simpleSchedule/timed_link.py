@@ -4,7 +4,9 @@ from time import sleep
 import time
 import os
 import json
+import converting_timestamps as ct
 import deploy
+import schedule_module_check as smc
 
 # function to provide the current day the user is in.
 def find_day():
@@ -29,9 +31,10 @@ def main():
             days = converted.keys()
             schedule.append(converted.values())
 
-    timestamp = '0900' # just need to get the timestamps now.
-
-    temp_links = parse_file_link(converted[find_day()][timestamp])
-    deploy.deploy_links(temp_links)
+    timestamps = ct.time_stamp_return(find_day()) # unformatted_timestamps -> 1900, timestamps -> 19:00
+    for timestamp in timestamps:
+        print(timestamp)
+        temp_links = parse_file_link(converted[find_day()][timestamp])
+        smc.scheduling(timestamp, temp_links)
 
 main()

@@ -9,15 +9,15 @@ def find_day():
     day = week_days[datetime.date.today().weekday()]
     return day
 
-def main(links):
-    temp_stamps = ct.time_stamp_return(find_day())
+def scheduling(timestamp, links):
     day = find_day()
-    for timestamp in temp_stamps:
-        schedule.every().day.at(timestamp).do(deploy.deploy_links, links)
+    schedule.every().day.at(timestamp).do(deploy.deploy_links, links)
 
     while True:
         schedule.run_pending()
         time.sleep(1)
+        
 
 if __name__ == "__main__":
-    main(["https://www.google.com", "https://www.youtube.com"])
+    temp_stamps = ct.time_stamp_return(find_day())
+    scheduling(temp_stamps, ["https://www.google.com", "https://www.youtube.com"])
