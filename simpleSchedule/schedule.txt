@@ -1,14 +1,13 @@
 {
     "monday": {
-        "14:05": {
-            "MONGUEY": [
-                "https://www.github.com/Naruita",
+        "14:20": {
+            "MGT1032": [
+                "https://www.youtube.com",
                 "https://mail.google.com"
             ]
         },
-        "14:15": {
-            "STS1007": [
-                "https://www.youtube.com",
+        "14:30": {
+            "CORONA": [
                 "https://www.google.com"
             ]
         }
