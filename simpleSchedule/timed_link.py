@@ -21,7 +21,7 @@ def parse_file_link(course_urls):
     return links
 
 # supposed to be the main part which reads the file and sends it to different functions.
-def main():
+def execute():
     schedule = []
 
     if os.path.isfile('schedule.txt'):
@@ -37,4 +37,5 @@ def main():
         temp_links = parse_file_link(converted[find_day()][timestamp])
         smc.scheduling(timestamp, temp_links)
 
-main()
+if __name__ == "__main__":
+    execute()
