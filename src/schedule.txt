@@ -1,15 +1,9 @@
 {
-    "monday": {
-        "14:05": {
-            "MONGUEY": [
-                "https://www.github.com/Naruita",
-                "https://mail.google.com"
-            ]
-        },
-        "14:15": {
+    "wednesday": {
+        "08:55": {
             "STS1007": [
-                "https://www.youtube.com",
-                "https://www.google.com"
+                "https://m.teamlink.co/6097105977?p=83b0953304ad70075faa84c94f63a6fd",
+                "https://mail.google.com"
             ]
         }
     }

@@ -41,7 +41,7 @@ def make():
         if input("Do you wish to continue?(y/n) : ")[0] == 'n':
             break
 
-    with open('schedule.txt', 'w') as f:
+    with open('../src/schedule.txt', 'w') as f:
         f.write(json.dumps(week_timetable, indent=4, sort_keys=True))
 
 if __name__ == "__main__":
