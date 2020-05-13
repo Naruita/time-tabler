@@ -1,9 +1,8 @@
 {
     "wednesday": {
-        "08:55": {
-            "STS1007": [
-                "https://m.teamlink.co/6097105977?p=83b0953304ad70075faa84c94f63a6fd",
-                "https://mail.google.com"
+        "14:58": {
+            "CSE": [
+                "https://m.teamlink.co/4509692464"
             ]
         }
     }
