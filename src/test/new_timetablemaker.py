@@ -1,20 +1,8 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*- 
+
 import json
-'''
-{
-    "tuesday": {
-        "08:50":
-        [
-            "https://m.teamlink.co/3456575612",
-            "https://mail.google.com"
-        ],
-        "09:55":
-        [
-            "https://m.teamlink.co/1559268139",
-            "https://www.github.com"
-        ]
-    }
-}
-'''
+
 # the class creates a timetable for a single day
 class day_timetable:
     def __init__(self, day):
@@ -61,7 +49,7 @@ def make():
         if input("Do you wish to enter entries for another day?(y/n) : ")[0] == 'n':
             break
 
-    with open('../src/schedule.txt', 'w') as f:
+    with open('./schedule.txt', 'w') as f:
         f.write(json.dumps(week_timetable, indent=4, sort_keys=True))
 
 if __name__ == '__main__':

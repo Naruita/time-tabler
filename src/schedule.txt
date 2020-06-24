@@ -1,8 +1,8 @@
 {
-    "wednesday": {
-        "14:58": {
-            "CSE": [
-                "https://m.teamlink.co/4509692464"
+    "friday": {
+        "11:00": {
+            "STS1009": [
+                "https://m.teamlink.co/7527836162?p=fab84c0f0fc0916c6f7be552dd484e2c"
             ]
         }
     }
