@@ -2,7 +2,7 @@
 name: Refinement Request
 about: Suggest how we can improve the project's existing features
 title: ''
-labels: ''
+labels: refinement
 assignees: ''
 
 ---
