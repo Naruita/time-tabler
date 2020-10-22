@@ -5,6 +5,7 @@ from time import sleep
 from pynput.keyboard import Key, Controller
 import pickle
 
+
 def deploy_links(team_links):
     keyboard = Controller()
     for team_link in team_links:
